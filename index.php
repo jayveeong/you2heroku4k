@@ -165,7 +165,7 @@ $header='
 		 </a>
         </div>';
 $footer='<footer class="w3-container w3-red w3-center" style="width: 100%;bottom: 0px;">
-            <p>©Development by <a href="https://2tube.js.org/" target="_blank">YOU2PHP</a></p>
+            <p>©Development by <a href="" target="_blank">Wag | Tanga</a></p>
         </footer>
         </body>
 </html>';
@@ -176,7 +176,7 @@ switch (@$_SERVER['PATH_INFO']) {
     case '/watch':
        echo $header;
        echo '<div class="w3-container w3-center tj"><div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
-    <p>不能观看请刷新,多试几次，若页面一直处于加载状态，可手动停止！</p>
+    <p>Can't watch, please refresh, try a few more times, if the page is always loading, you can stop it manually!</p>
   </div></div>';
        echo '<div class="w3-container w3-center bfq">
             <iframe width="100%" height="100%" src="../Proxy.php?https://www.youtube.com/embed/'.trim($_SERVER[QUERY_STRING]).'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
