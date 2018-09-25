@@ -160,7 +160,9 @@ $header='
     </head>
      <body style="background-color: #f8f8f8;">
         <div class="w3-container w3-red w3-center" style="height:55px">
+		 <a href="http://formykids.herokuapp.com/index.php">
            <img src="'.Root_part().'2.png" alt="logo" style="height:35px;margin: 10px 0" />
+		 </a>
         </div>';
 $footer='<footer class="w3-container w3-red w3-center" style="width: 100%;bottom: 0px;">
             <p>©Development by <a href="https://2tube.js.org/" target="_blank">YOU2PHP</a></p>
@@ -361,7 +363,7 @@ function get_data($url){
    return $f;  
 }
 //获取热门
-function get_trending($apikey,$max,$pageToken='',$regionCode='ph'){
+function get_trending($apikey,$max,$pageToken='',$regionCode='PH'){
     $apilink='https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&chart=mostPopular&regionCode='.$regionCode.'&maxResults='.$max.'&key='.$apikey.'&pageToken='.$pageToken;
      return json_decode(get_data($apilink),true);
 }
