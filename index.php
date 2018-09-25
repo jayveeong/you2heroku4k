@@ -3,7 +3,7 @@ ini_set('display_errors', '0');
 //把下面的资料改成您的
 
 //网站名字
-$siteName='Wag | Tanga - YouTube';
+$siteName='WagTangaTube';
 
 //youtube API V3 KEY:
 
@@ -173,7 +173,7 @@ switch (@$_SERVER['PATH_INFO']) {
     case '/watch':
        echo $header;
        echo '<div class="w3-container w3-center tj"><div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
-    <p>Can't watch, please refresh, try a few more times, if the page is always loading, you can stop it manually!</p>
+    <p> Can't watch, please refresh, try a few more times, if the page is always loading, you can stop it manually! </p>
   </div></div>';
        echo '<div class="w3-container w3-center bfq">
             <iframe width="100%" height="100%" src="../Proxy.php?https://www.youtube.com/embed/'.trim($_SERVER[QUERY_STRING]).'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
