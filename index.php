@@ -214,11 +214,11 @@ switch (@$_SERVER['PATH_INFO']) {
         echo $header;
          $q=urlencode($_GET['q']);
          echo '<div class="w3-container w3-center tj" style="min-height:600px;">
-         <h4><b class="w3-opacity">'.$_GET['q'].'</b> 搜索结果</h4>
+         <h4><b class="w3-opacity">'.$_GET['q'].'</b> Search Results</h4>
                <div id="load_data"></div>
                <div id="load_data_message"></div>
                <div id="ajax-load" style="display:none">
-                 <p><img src="../loader.gif">加载中....</p>
+                 <p><img src="../loader.gif">Loading....</p>
                </div>
         </div>';
        
