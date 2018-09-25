@@ -160,12 +160,12 @@ $header='
     </head>
      <body style="background-color: #f8f8f8;">
         <div class="w3-container w3-red w3-center" style="height:55px">
-		 <a href="http://formykids.herokuapp.com/index.php">
+		 <a href="index.php">
            <img src="'.Root_part().'2.png" alt="logo" style="height:35px;margin: 10px 0" />
 		 </a>
         </div>';
 $footer='<footer class="w3-container w3-red w3-center" style="width: 100%;bottom: 0px;">
-            <p>©Development by <a href="" target="_blank">Wag | Tanga</a></p>
+            <p>©Development by <a href=" " target="_blank">Wag | Tanga</a></p>
         </footer>
         </body>
 </html>';
