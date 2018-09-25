@@ -160,8 +160,8 @@ $header='
     </head>
      <body style="background-color: #f8f8f8;">
         <div class="w3-container w3-red w3-center" style="height:55px">
-		 <a href=" ">
-           <img src="'.Root_part().'2.png" alt="logo" style="height:35px;margin: 10px 0" />
+		 <a href="'.Root_part().'index.php/">
+           <img src="'.Root_part().'2.png" alt="logo" style="height:35px;margin: 10px 0" >
 		 </a>
         </div>';
 $footer='<footer class="w3-container w3-red w3-center" style="width: 100%;bottom: 0px;">
