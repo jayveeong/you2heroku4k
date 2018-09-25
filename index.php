@@ -3,7 +3,7 @@ ini_set('display_errors', '0');
 //把下面的资料改成您的
 
 //网站名字
-$siteName='WagTangaTube';
+$siteName='WagTanga';
 
 //youtube API V3 KEY:
 
@@ -173,7 +173,7 @@ switch (@$_SERVER['PATH_INFO']) {
     case '/watch':
        echo $header;
        echo '<div class="w3-container w3-center tj"><div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
-    <p> Can't watch, please refresh, try a few more times, if the page is always loading, you can stop it manually! </p>
+    <p>不能观看请刷新,多试几次，若页面一直处于加载状态，可手动停止！</p>
   </div></div>';
        echo '<div class="w3-container w3-center bfq">
             <iframe width="100%" height="100%" src="../Proxy.php?https://www.youtube.com/embed/'.trim($_SERVER[QUERY_STRING]).'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -211,11 +211,11 @@ switch (@$_SERVER['PATH_INFO']) {
         echo $header;
          $q=urlencode($_GET['q']);
          echo '<div class="w3-container w3-center tj" style="min-height:600px;">
-         <h4><b class="w3-opacity">'.$_GET['q'].'</b>search results</h4>
+         <h4><b class="w3-opacity">'.$_GET['q'].'</b> 搜索结果</h4>
                <div id="load_data"></div>
                <div id="load_data_message"></div>
                <div id="ajax-load" style="display:none">
-                 <p><img src="../loader.gif">Loading....</p>
+                 <p><img src="../loader.gif">加载中....</p>
                </div>
         </div>';
        
@@ -239,7 +239,7 @@ echo '<script>
                  
                      action = \'active\';
                      $(\'#ajax-load\').hide();
-                    $(\'#load_data_message\').html(\'<div class="w3-panel w3-yellow"><h3>Sorry!</h3><p>没有找到相关视频</p></div>\');
+                    $(\'#load_data_message\').html(\'<div class="w3-panel w3-yellow"><h3>抱歉！</h3><p>没有找到相关视频</p></div>\');
                 } else {
                     action = "inactive";
                     $(\'#ajax-load\').hide();
@@ -316,7 +316,7 @@ echo '<script>
         $(\'.searchTerm\').tw_input_placeholder({
             speed: 100,
             delay: 2000,
-            keywords: [\'Want to see something?\', \'You can type a Youtube video link\', \'https://www.youtube.com/watch?v=3qrsX5PIUn4\', \'Or enter a keyword search\',
+            keywords: [\'想看点啥?\', \'您可以输入一个Youtube视频链接\', \'https://www.youtube.com/watch?v=3qrsX5PIUn4\', \'或者是输入一个关键词搜索\',
                     \'Music\']
         });
         </script></div></div>';
@@ -378,5 +378,3 @@ function get_search_video($query,$apikey,$type='video',$order='relevance',$regio
 }
 
 ?>
-
- 
