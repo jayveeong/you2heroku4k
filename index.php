@@ -3,7 +3,7 @@ ini_set('display_errors', '0');
 //把下面的资料改成您的
 
 //网站名字
-$siteName='Wag|Tanga';
+$siteName='Wag | Tanga';
 
 //youtube API V3 KEY:
 
@@ -16,7 +16,8 @@ $key='AIzaSyARHJJDFtwb5wcnURwwJA3FQRrM16PF27c';
 $header='
 <html>
     <head>
-        <title>'.$siteName.'</title>
+        <title>'.$siteName.' - YouTube</title>
+		<link rel="shortcut icon" type="image/png" href="http://www.iconj.com/ico/4/s/4samwdswxo.ico"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="'.Root_part().'w3.css">'.
