@@ -176,7 +176,7 @@ switch (@$_SERVER['PATH_INFO']) {
     case '/watch':
        echo $header;
        echo '<div class="w3-container w3-center tj"><div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
-    <p>Refresh a few more times to play video! </p>
+    <p>How do I fix YouTube not playing? Refresh! </p>
   </div></div>';
        echo '<div class="w3-container w3-center bfq">
             <iframe width="100%" height="100%" src="../Proxy.php?https://www.youtube.com/embed/'.trim($_SERVER[QUERY_STRING]).'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -294,9 +294,9 @@ echo '<script>
             </div>
         </div>
         <div class="w3-container w3-center" style="background-color: #fff;margin-top: 10px;">
-        <h3>#时下流行#</h3>
+        <h3>#Trending#</h3>
             <div class="tj">';
-            $home_data=get_trending($key,'25','','tw');
+            $home_data=get_trending($key,'25','','PH');
             
             foreach ($home_data["items"] as $v) {
                 echo '
